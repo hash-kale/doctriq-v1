@@ -40,6 +40,7 @@ import {
   Facebook
 } from 'lucide-react';
 import { motion, AnimatePresence, useInView } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 
 // --- Custom Icons ---
 const GooglePlayIcon = ({ className = "" }: { className?: string }) => (
@@ -1680,6 +1681,7 @@ export default function App() {
       </motion.main>
 
       <Footer />
+      <Analytics />
     </div>
   );
 }
